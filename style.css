@@ -4,7 +4,7 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   background: #fff;
   color: #fff;
   fill: #c2c2c2
@@ -20,8 +20,7 @@ body {
   background-color: #212121;
   color: #fff;
   margin: 0 auto;
-  padding: 0 50px;
-  overflow-x: auto
+  padding: 0 50px
 }
 .tooltip {
   position: absolute;
@@ -30,7 +29,7 @@ body {
   background: #000;
   border-radius: 5px;
   pointer-events: none;
-  text-align: left;
+  text-align: left
 }
 svg {
   font-size: 10px;
@@ -40,10 +39,7 @@ svg {
 }
 .tile-text {
   cursor: default;
-  font-family: 'Roboto Mono', monospace
-}
-#description {
-  margin-bottom: 2rem
+  font-family: 'Roboto Mono',monospace
 }
 #legend {
   font-size: 16px;
@@ -52,4 +48,11 @@ svg {
 .data-cell:hover > .tile {
   stroke: #fff;
   stroke-width: 2px
+}
+@media only screen and (max-width: 1200px) {
+  .graph-container {
+    padding: 0;
+    width: 100%;
+    overflow-x: auto
+  }
 }

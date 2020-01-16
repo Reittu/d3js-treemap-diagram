@@ -1,2 +1,8 @@
-# d3js-treemap-diagram
- Data Visualization project using D3.js library (v5). FCC
+# D3.js Treemap Diagram
+
+## Live demo
+
+[Demo](https://xn4hr.csb.app/)
+
+[Editor](https://codesandbox.io/s/d3js-treemap-diagram-xn4hr?fontsize=14&hidenavigation=1&theme=dark)
+

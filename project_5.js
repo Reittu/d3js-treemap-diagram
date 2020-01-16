@@ -93,9 +93,12 @@ d3.json('https://cdn.rawgit.com/freeCodeCamp/testable-projects-fcc/a80ce8f9/src/
       .map((nodes) => nodes.data.category)
       .filter((category, index, array) => array.indexOf(category) === index);
 
+
+    LEGEND.height = Math.ceil(categories.length / LEGEND.rowElements) * (LEGEND.rectSize + LEGEND.marginY);
     const legend = wrapper.append('svg')
       .attr('id', 'legend')
-      .attr('width', LEGEND.width);
+      .attr('width', LEGEND.width)
+      .attr('height', LEGEND.height);
 
     const legendGroup = legend.append('g')
       .selectAll('g')
@@ -122,11 +125,6 @@ d3.json('https://cdn.rawgit.com/freeCodeCamp/testable-projects-fcc/a80ce8f9/src/
   }
 
   ).catch(err => console.log(err));
-
-
-
-
-
 
 // Helper functions
 
